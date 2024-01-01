@@ -1,0 +1,26 @@
+<style>
+    form,p{
+        text-align: center;
+    }
+</style>
+<p>ENTER YOUR DATA</p>
+<form method = "POST" action="add">
+    {% csrf_token %}
+
+    <label for="ID":>ID</label>
+    <div>{{form.eid}}</div>
+    <label for = "Name":>NAME</label>
+    <div>{{form.ename}}</div>
+    <label for = "EMAIL":>EMAIL</label>
+    <div>{{form.eemail}}</div>
+    <label for ="CONTACT":>CONTACT</label>
+    <div>{{form.econtact}}</div>
+    <div>
+        <button type="submit">ADD DETAILS</button>
+    </div>
+
+
+
+
+
+</form>
